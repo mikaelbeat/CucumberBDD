@@ -1,15 +1,19 @@
-package backgroundStepDefinitions;
+package dataTable_scenario;
+
+import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class BackgroundScenarioSteps {
+public class DataTableScenarioSteps {
 	
 	WebDriver driver;
 	
@@ -41,11 +45,16 @@ public class BackgroundScenarioSteps {
 		String actualValue = driver.findElement(By.xpath("//input[@id='u_0_e']")).getAttribute("value");
 		Assert.assertEquals(lastName, actualValue);
 	}
-
-	@Then("^User mobile field should be blank$")
-	public void user_mobile_field_should_be_blank() throws Throwable {
+	
+	@Then("^User enters \"([^\"]*)\" address$")
+	public void user_enters_email_adress(String email) throws Throwable {
+	    driver.findElement(By.xpath("//input[@id='u_0_h']")).sendKeys(email);
+	}
+	
+	@Then("^User checks \"([^\"]*)\" address$")
+	public void user_checks_email_address(String email) throws Throwable {
 	    String actualValue = driver.findElement(By.xpath("//input[@id='u_0_h']")).getAttribute("value");
-	    Assert.assertEquals("", actualValue);
+	    Assert.assertEquals(email, actualValue);
 	}
 	
 	@Then("^Close browser$")

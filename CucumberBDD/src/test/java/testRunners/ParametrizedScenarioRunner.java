@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				monochrome = true,
 				dryRun = false,
-				features = {"src/test/java/features/parametrizedScenarios.feature"},
-				glue = {"parametrizedScenarioStepDefinitions"},
+				features = {"src/test/java/parametrized_scenario/parametrizedScenarios.feature"},
+				glue = {"parametrized_scenario"},
 				plugin = {"pretty", 
 						 "html:target/cucumber-htmlreport",
 						 "json:target/cucumber-report.json"})

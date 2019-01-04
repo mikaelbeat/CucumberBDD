@@ -1,4 +1,4 @@
-package multipleScenarioStepDefinitions;
+package background_scenario;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class MultipleScenarioSteps {
+public class BackgroundScenarioSteps {
 	
 	WebDriver driver;
 	
@@ -20,26 +20,26 @@ public class MultipleScenarioSteps {
 		driver.get("http://www.facebook.com/");
 	}
 	
-	@When("^User enters first name$")
-	public void user_enters_first_name() {
-		driver.findElement(By.xpath("//input[@id='u_0_c']")).sendKeys("Tester");
+	@When("^User enters user \"([^\"]*)\" first name$")
+	public void user_enters_user_first_name(String userName) {
+		driver.findElement(By.xpath("//input[@id='u_0_c']")).sendKeys(userName);
 	}
 	
-	@Then("^User checks first name$")
-	public void user_checks_first_name() {
+	@Then("^User checks \"([^\"]*)\" first name$")
+	public void user_checks_first_name(String userName) {
 		String actualValue = driver.findElement(By.xpath("//input[@id='u_0_c']")).getAttribute("value");
-		Assert.assertEquals("Tester", actualValue);
+		Assert.assertEquals(userName, actualValue);
 	}
 	
-	@When("^User enters lastname$")
-	public void user_enters_lastname() throws Throwable {
-	    driver.findElement(By.xpath("//input[@id='u_0_e']")).sendKeys("Tester");
+	@When("^User enters user \"([^\"]*)\" lastname$")
+	public void user_enters_user_lastname(String lastName) throws Throwable {
+	    driver.findElement(By.xpath("//input[@id='u_0_e']")).sendKeys(lastName);
 	}
 
-	@Then("^Validate last name$")
-	public void validate_last_name() throws Throwable {
+	@Then("^Validate \"([^\"]*)\" last name$")
+	public void validate_last_name(String lastName) throws Throwable {
 		String actualValue = driver.findElement(By.xpath("//input[@id='u_0_e']")).getAttribute("value");
-		Assert.assertEquals("Tester", actualValue);
+		Assert.assertEquals(lastName, actualValue);
 	}
 
 	@Then("^User mobile field should be blank$")

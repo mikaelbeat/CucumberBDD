@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				monochrome = true,
 				dryRun = false,
-				features = {"src/test/java/features/dataTableScenarios.feature"},
-				glue = {"dataTableStepDefinitions"},
+				features = {"src/test/java/dataTable_scenario/dataTableScenarios.feature"},
+				glue = {"dataTable_scenario"},
 				plugin = {"pretty", 
 						 "html:target/cucumber-htmlreport",
 						 "json:target/cucumber-report.json"})

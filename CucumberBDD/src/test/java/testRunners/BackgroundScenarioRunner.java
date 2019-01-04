@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				monochrome = true,
 				dryRun = false,
-				features = {"src/test/java/features/backgroundScenarios.feature"},
-				glue = {"backgroundStepDefinitions"},
+				features = {"src/test/java/background_scenario/backgroundScenarios.feature"},
+				glue = {"background_scenario"},
 				plugin = {"pretty", 
 						 "html:target/cucumber-htmlreport",
 						 "json:target/cucumber-report.json"})
