@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/background_scenario/backgroundScenarios.feature"},
 				glue = {"background_scenario"},
 				plugin = {"pretty", 
-						 "html:target/background_scenario/cucumber-htmlreport",
-						 "json:target/background_scenario/cucumber-report.json,",
-						 "com.cucumber.listener.ExtentCucumberFormatter:target/background_scenario/report.html"})
+						 "html:target/cucumber-htmlreport",
+						 "json:target/cucumber-report1.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/report1.html"})
 
 public class Test_Background_Scenario_Runner {
 

@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/extentReport_scenarios/extentReportScenarios.feature"},
 				glue = {"extentReport_scenarios"},
 				plugin = {"pretty", 
-						 "html:target/extentReport_scenarios/cucumber-htmlreport",
-						 "json:target/extentReport_scenarios/cucumber-report.json,",
-						 "com.cucumber.listener.ExtentCucumberFormatter:target/extentReport_scenarios/report.html"})
+						 "html:target/cucumber-htmlreport",
+						 "json:target/cucumber-report3.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/report3.html"})
 
 public class Test_Extent_Report_Scenario_Runner {
 

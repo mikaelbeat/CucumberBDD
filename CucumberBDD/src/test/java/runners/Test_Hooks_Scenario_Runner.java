@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/hooks_scenario/hooksScenarios.feature"},
 				glue = {"hooks_scenario"},
 				plugin = {"pretty", 
-							 "html:target/hooks_scenario/cucumber-htmlreport",
-							 "json:target/hooks_scenario/cucumber-report.json,",
-							 "com.cucumber.listener.ExtentCucumberFormatter:target/hooks_scenario/report.html"})
+						 "html:target/cucumber-htmlreport",
+						 "json:target/cucumber-report4.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/report4.html"})
 
 public class Test_Hooks_Scenario_Runner {
 

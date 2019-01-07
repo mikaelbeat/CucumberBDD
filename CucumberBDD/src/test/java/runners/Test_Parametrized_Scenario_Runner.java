@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/parametrized_scenario/parametrizedScenarios.feature"},
 				glue = {"parametrized_scenario"},
 				plugin = {"pretty", 
-						 "html:target/parametrized_scenario/cucumber-htmlreport",
-						 "json:target/parametrized_scenario/cucumber-report.json,",
-						 "com.cucumber.listener.ExtentCucumberFormatter:target/parametrized_scenario/report.html"})
+						 "html:target/cucumber-htmlreport",
+						 "json:target/cucumber-report8.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/report8.html"})
 
 public class Test_Parametrized_Scenario_Runner {
 

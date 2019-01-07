@@ -11,9 +11,9 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/shareData_scenario/shareDataScenarios.feature"},
 				glue = {"shareData_scenario"},
 				plugin = {"pretty", 
-						 "html:target/shareData_scenario/cucumber-htmlreport",
-						 "json:target/shareData_scenario/cucumber-report.json,",
-						 "com.cucumber.listener.ExtentCucumberFormatter:target/shareData_scenario/report.html"})
+						 "html:target/cucumber-htmlreport",
+						 "json:target/cucumber-report9.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/report9.html"})
 
 public class Test_Share_Data_Scenario_Runner {
 

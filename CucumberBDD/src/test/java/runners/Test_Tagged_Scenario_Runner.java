@@ -12,9 +12,9 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/tagged_scenario/taggedScenarios.feature"},
 				glue = {"tagged_scenario"},
 				plugin = {"pretty", 
-						 "html:target/tagged_scenario/cucumber-htmlreport",
-						 "json:target/tagged_scenario/cucumber-report.json,",
-						 "com.cucumber.listener.ExtentCucumberFormatter:target/tagged_scenario/report.html"})
+						 "html:target/cucumber-htmlreport",
+						 "json:target/cucumber-report10.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/report10.html"})
 
 public class Test_Tagged_Scenario_Runner {
 
