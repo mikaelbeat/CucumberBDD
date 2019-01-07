@@ -1,4 +1,4 @@
-Feature: Validate create account of Facebook
+Feature: DataTable scenario
 
 Background: Common login steps
 Given User opens Facebook login page

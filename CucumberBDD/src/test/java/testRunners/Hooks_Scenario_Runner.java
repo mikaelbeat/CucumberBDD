@@ -8,14 +8,14 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				monochrome = true,
 				dryRun = false,
-				tags = {"@Smoke"},
-				features = {"src/test/java/tagged_scenario/taggedScenarios.feature"},
-				glue = {"tagged_scenario"},
+				features = {"src/test/java/hooks_scenario/hooksScenarios.feature"},
+				glue = {"hooks_scenario"},
 				plugin = {"pretty", 
-						 "html:target/cucumber-htmlreport",
-						 "json:target/cucumber-report.json"})
+							 "html:target/hooks_scenario/cucumber-htmlreport",
+							 "json:target/hooks_scenario/cucumber-report.json,",
+							 "com.cucumber.listener.ExtentCucumberFormatter:target/hooks_scenario/report.html"})
 
-public class TaggedScenarioRunner {
+public class Hooks_Scenario_Runner {
 
 }
 

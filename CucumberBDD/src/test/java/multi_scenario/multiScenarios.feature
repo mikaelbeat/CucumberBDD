@@ -1,4 +1,4 @@
-Feature: Validate create account of Facebook
+Feature: Multiple feature fields scenario, feature file for Facebook
 
 Scenario: Validate first name field
 Given User opens Facebook login page

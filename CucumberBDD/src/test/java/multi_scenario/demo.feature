@@ -1,4 +1,4 @@
-Feature: Validate first and last name
+Feature: Multiple feature fields scenario, feature file for demo site
 As a user you need to validate first and last name
 
 Scenario: Check first and last name

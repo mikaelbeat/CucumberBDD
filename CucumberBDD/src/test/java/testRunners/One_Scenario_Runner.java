@@ -10,9 +10,10 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/one_scenario/oneScenario.feature"},
 				glue = {"one_scenario"},
 				plugin = {"pretty", 
-						 "html:target/cucumber-htmlreport",
-						 "json:target/cucumber-report.json"})
+						 "html:target/one_scenario/cucumber-htmlreport",
+						 "json:target/one_scenario/cucumber-report.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/one_scenario/report.html"})
 
-public class OneScenarioRunner {
+public class One_Scenario_Runner {
 
 }

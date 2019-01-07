@@ -1,4 +1,4 @@
-Feature: Validate create account of Facebook
+Feature: Tagged scenarios
 
 Background: Common login steps
 Given User opens Facebook login page

@@ -1,4 +1,4 @@
-Feature: Validate create account of Facebook
+Feature: One scenario
 
 Scenario: Validate first name field
 Given User opens Facebook login page

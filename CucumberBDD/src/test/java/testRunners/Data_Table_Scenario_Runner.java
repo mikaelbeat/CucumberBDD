@@ -11,9 +11,10 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/dataTable_scenario/dataTableScenarios.feature"},
 				glue = {"dataTable_scenario"},
 				plugin = {"pretty", 
-						 "html:target/cucumber-htmlreport",
-						 "json:target/cucumber-report.json"})
+						 "html:target/dataTable_scenario/cucumber-htmlreport",
+						 "json:target/dataTable_scenario/cucumber-report.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/dataTable_scenario/report.html"})
 
-public class DataTableScenarioRunner {
+public class Data_Table_Scenario_Runner {
 
 }

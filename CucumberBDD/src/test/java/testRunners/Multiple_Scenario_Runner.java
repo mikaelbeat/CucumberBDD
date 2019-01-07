@@ -11,9 +11,10 @@ import cucumber.api.junit.Cucumber;
 				features = {"src/test/java/multiple_scenarios/multipleScenarios.feature"},
 				glue = {"multiple_scenarios"},
 				plugin = {"pretty", 
-						 "html:target/cucumber-htmlreport",
-						 "json:target/cucumber-report.json"})
+						 "html:target/multiple_scenarios/cucumber-htmlreport",
+						 "json:target/multiple_scenarios/cucumber-report.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/multiple_scenarios/report.html"})
 
-public class MultipleScenarioRunner {
+public class Multiple_Scenario_Runner {
 
 }
