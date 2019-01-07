@@ -5,6 +5,23 @@
 	<groupId>CucumberBDD</groupId>
 	<artifactId>CucumberBDD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+		<packaging>jar</packaging>
+
+	<name>CucumberBDD</name>
+	<url>http://maven.apache.org</url>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M3</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 	<dependencies>
 
@@ -55,20 +72,7 @@
 
 	</dependencies>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.8.0</version>
-					<configuration>
-						<!-- put your configurations here -->
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+
 
 
 </project>

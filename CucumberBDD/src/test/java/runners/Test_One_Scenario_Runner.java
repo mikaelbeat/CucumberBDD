@@ -1,4 +1,4 @@
-package testRunners;
+package runners;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -14,6 +14,6 @@ import cucumber.api.junit.Cucumber;
 						 "json:target/one_scenario/cucumber-report.json,",
 						 "com.cucumber.listener.ExtentCucumberFormatter:target/one_scenario/report.html"})
 
-public class One_Scenario_Runner {
+public class Test_One_Scenario_Runner {
 
 }

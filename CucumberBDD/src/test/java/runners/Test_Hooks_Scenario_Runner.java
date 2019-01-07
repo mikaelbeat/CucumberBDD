@@ -1,4 +1,4 @@
-package testRunners;
+package runners;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 							 "json:target/hooks_scenario/cucumber-report.json,",
 							 "com.cucumber.listener.ExtentCucumberFormatter:target/hooks_scenario/report.html"})
 
-public class Hooks_Scenario_Runner {
+public class Test_Hooks_Scenario_Runner {
 
 }
 

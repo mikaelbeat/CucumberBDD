@@ -1,4 +1,4 @@
-package testRunners;
+package runners;
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -8,15 +8,14 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 				monochrome = true,
 				dryRun = false,
-				tags = {"@Smoke"},
-				features = {"src/test/java/tagged_scenario/taggedScenarios.feature"},
-				glue = {"tagged_scenario"},
+				features = {"src/test/java/shareData_scenario/shareDataScenarios.feature"},
+				glue = {"shareData_scenario"},
 				plugin = {"pretty", 
-						 "html:target/tagged_scenario/cucumber-htmlreport",
-						 "json:target/tagged_scenario/cucumber-report.json,",
-						 "com.cucumber.listener.ExtentCucumberFormatter:target/tagged_scenario/report.html"})
+						 "html:target/shareData_scenario/cucumber-htmlreport",
+						 "json:target/shareData_scenario/cucumber-report.json,",
+						 "com.cucumber.listener.ExtentCucumberFormatter:target/shareData_scenario/report.html"})
 
-public class Tagged_Scenario_Runner {
+public class Test_Share_Data_Scenario_Runner {
 
 }
 
